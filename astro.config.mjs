@@ -3,5 +3,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    base: '.',
-});
+    outDir: './dist' // Asegurar que la salida esté en "dist"
+  });

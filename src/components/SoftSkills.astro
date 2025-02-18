@@ -1,36 +1,36 @@
 ---
 
 ---
-<hr class="linea">
+
+<hr class="linea" />
 <div class="soft-skills">
-    <div class="seccion-tit">
-        <h2>Soft Skills</h2>
+  <div class="seccion-tit">
+    <h2>Soft Skills</h2>
+  </div>
+  <div class="cada-softskill">
+    <div class="sofskill1">
+      <p>Adaptabilidad</p>
     </div>
-    <div class="cada-softskill">
-        <div class="sofskill1">
-            <p>Adaptabilidad</p>
-        </div>
-        <div class="sofskill1">
-            <p>Comunicación</p>
-        </div>
-        <div class="sofskill1">
-            <p>Trabajo en equipo</p>
-        </div>
-        <div class="sofskill1">
-            <p>Iniciativa</p>
-        </div>
-        <div class="sofskill1">
-            <p>Innovación</p>
-        </div>
-        <div class="sofskill1">
-            <p>Organización</p>
-        </div>
+    <div class="sofskill1">
+      <p>Comunicación</p>
     </div>
+    <div class="sofskill1">
+      <p>Trabajo en equipo</p>
+    </div>
+    <div class="sofskill1">
+      <p>Iniciativa</p>
+    </div>
+    <div class="sofskill1">
+      <p>Innovación</p>
+    </div>
+    <div class="sofskill1">
+      <p>Organización</p>
+    </div>
+  </div>
 </div>
 <script src="/src/scripts/animaciones.js"></script>
 <style>
-
-.linea {
+  .linea {
     position: relative;
     height: 1px;
     background-color: #15171d; /* Color azul */
@@ -38,75 +38,73 @@
     border: 1;
     border-color: #0f53c2;
     border-radius: 40%;
-}
-a {
+  }
+  a {
     text-decoration: none;
-}
+  }
 
-.soft-skills {
-  padding: 25px 23%;
-  color: #394665;
-  background: #15171d;
-}
+  .soft-skills {
+    padding: 25px 23%;
+    color: #394665;
+    background: #15171d;
+  }
 
-.cada-softskill {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  .cada-softskill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: max-content;
-  gap: 10px;
-  
-}
+    text-align: center;
+    width: 100%;
+    height: max-content;
+    gap: 10px;
+  }
 
-.sofskill1 {
-  padding: 10px;
-  background-color: #212225;
-  text-align: center;
-  border-radius: 7px;
-  margin: 10px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
-    }
-    
-.sofskill1.visible {
+  .sofskill1 {
+    padding: 10px;
+    background-color: #212225;
+    text-align: center;
+    border-radius: 7px;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.5s ease,
+      transform 0.5s ease;
+  }
+
+  .sofskill1.visible {
     opacity: 1;
     transform: translateY(0);
-}
+  }
 
-.sofskill1:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
-}
+  .sofskill1:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
 
-.sofskill1 h2 {
-  font-size: 18px;
-  color: #ffffff;
-  padding-bottom: 7px;
-  
-}
-.sofskill1 p {
-  font-size: 16;
-  color: #d8d8d8;
-}
+  .sofskill1 h2 {
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 7px;
+  }
+  .sofskill1 p {
+    font-size: 16;
+    color: #d8d8d8;
+  }
 
-@media (min-width: 769px) and (max-width: 1440px) {
-  .linea {
+  @media (min-width: 769px) and (max-width: 1440px) {
+    .linea {
       width: 50%; /* Ancho de la línea (ajústalo según lo que necesites) */
     }
-  .soft-skills{
-    padding: 25px 18%; /* Aumenta el padding de los lados */
-  }
-  .cada-softskill {
+    .soft-skills {
+      padding: 25px 18%; /* Aumenta el padding de los lados */
+    }
+    .cada-softskill {
       grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
       gap: 10px;
     }
-    
+
     .sofskill1 {
       width: 100%;
       max-width: 100px;
@@ -117,7 +115,6 @@ a {
       font-size: 14px;
     }
   }
-
 
   /* Media query para pantallas pequeñas */
   @media (max-width: 768px) {
